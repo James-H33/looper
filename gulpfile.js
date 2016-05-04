@@ -22,24 +22,25 @@ gulp.task('sass', function(){
 gulp.task('browserSync', ['nodemon'], function() {
 
   browserSync.init(null, {
-    proxy: 'http://localhost:4000',
+    proxy: 'http://localhost:5000',
     files: ['view/index.pug'],
+    browser: 'google chrome',
     port: 7000
   });
 
   gulp.watch('./**/*.sass', ['sass']);
-  gulp.watch('./**/*.js').on('change', browserSync.reload);
+  // watch js needs to be altered to ignore node_modules as CPU usage is too high
+  // gulp.watch('./**/*.js').on('change', browserSync.reload);
   gulp.watch('./**/*.pug').on('change', browserSync.reload);
 })
 
-gulp.task('nodemon', function() {
+gulp.task('nodemon', function(cb) {
   var started = false;
 
 	return nodemon({
 		script: 'app.js'
 	}).on('start', function () {
-		// to avoid nodemon being started multiple times
-		// thanks @matthisk
+    
 		if (!started) {
 			cb();
 			started = true;
