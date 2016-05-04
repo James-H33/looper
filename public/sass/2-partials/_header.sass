@@ -3,17 +3,17 @@
 //*************************************************
 
 .nav-wrapper
-  width: 0
-  height: 0
-  background: $light-green
+  width: 300px
+  height: 100vh
+  background: #fff
   position: fixed
   transition: all 0.4s linear
   transform: translateX(-300px)
-  
+  z-index: 100
+ 
   &.active-nav  
-    width: 300px
-    height: 100vh
     transform: translateX(0)
+    box-shadow: 0px 5px 5px $flat-gray
 
 .nav-icon
   width: 30px
@@ -27,7 +27,7 @@
   span
     width: 28px
     height: 3px
-    background: $light-green
+    background: $red
     position: absolute
     transition: all 0.4s linear
     
@@ -51,19 +51,59 @@
     &:nth-child(3).active-nav
       top: 9px
       transform: rotate(-135deg)
+      
+.nav-logo
+  width: 90%
+  position: absolute
+  top: 0px
+  left: 50px
+  cursor: pointer
+  
+  a
+    color: $red
+    font-size: 200px 
+    font-weight: bold
+    position: relative
+    
+    span
+      color: $flat-gray
+      font-size: 45px
+      font-style: italic
+      position: absolute
+      bottom: 73px
+      left: 62px
+      
+    
+       
 
 .nav-display
   width: 100%
   height: 100%
+  overflow-x: hidden
+  position: relative
   display: flex
   flex-direction: column
   justify-content: center
+  transition: all 0.7s ease 0.2s
+  transform: translateX(-30px)
+  
+  &.active-nav  
+    transform: translateX(0)
   
   li
     list-style: none
-    font-size: 30px
-    margin: 10px 0 10px 15px
+    font-size: 20px
+    margin: 10px 0 10px 25px
+    cursor: pointer 
+    transition: all 0.35s ease
+    
+    &:hover
+      transform: translate3d(10px, 0, 0)
+      margin-left: 10px
+      text-shadow: 0px 0px 1px #000
     
     a
-      color: $off-white
+      color: $flat-gray
       text-decoration: none
+
+      
