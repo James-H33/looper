@@ -1,4 +1,5 @@
 include ./partials/header.pug
+
 section.index-intro-wrapper
     div.index-intro-display
         div.index-intro-offer
@@ -9,20 +10,66 @@ section.index-intro-wrapper
                 span $40
                 span each
             li UNLIMITED EVERYTHING
-            li Terms and Conditions apply
-            button: a(href="#") Get This Deal
+            li *Terms and Conditions apply
+            button 
+                a(href="#") Get This Deal
+                span(class="fa fa-arrow-right" aria-hidden="true")
         div.index-intro-plan
             li Galaxy S7 Edge
             li UNLIMITED 
             li EVERTHING
-            button: a(href="#") Get Started
+            li *Terms and Conditions apply
+            button 
+                a(href="#") Get Started
+                span(class="fa fa-arrow-right" aria-hidden="true")
             div.intro-plan-img
                 img(src="/imgs/g7eC-crop.png")
+                
 section.index-phones-wrapper
     div.index-phones-display
         ul
-            li Apple iPhone 6s
-            li Samsung Galaxy S7
-            li Samsung Galaxy S7 Edge
-            li LG G5 Plus
+            li 
+                img(src="/imgs/apple5-crop.png")
+                a(href="#") Apple iPhone 6s
+                div.phones-rating
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star-half-o" aria-hidden="true")
+                    span (521)
+            li 
+                img(src="/imgs/apple6-crop.png")
+                a(href="#") Samsung Galaxy S7
+                div.phones-rating
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star-half-o" aria-hidden="true")
+                    span (245)
+            li 
+                img(src="/imgs/g7black-crop.png")
+                a(href="#") Samsung Galaxy S7 Edge
+                div.phones-rating
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star-half-o" aria-hidden="true")
+                    span (607)
+            li 
+                img(src="/imgs/g7silver-crop.png")
+                a(href="#") LG G5 Plus
+                div.phones-rating
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star" aria-hidden="true")
+                    i(class="fa fa-star-half-o" aria-hidden="true")
+                    span (302)
+                
+section.index-coverage-wrapper
+    .index-coverage-display
+        
 include ./partials/footer.pug
