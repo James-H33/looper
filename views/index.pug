@@ -1,75 +1,108 @@
 include ./partials/header.pug
 
 section.index-intro-wrapper
-    div.index-intro-display
-        div.index-intro-offer
-            li
-                span 2 
-                span LINES 
-                span for 
-                span $40
-                span each
-            li UNLIMITED EVERYTHING
-            li *Terms and Conditions apply
-            button 
-                a(href="#") Get This Deal
-                span(class="fa fa-arrow-right" aria-hidden="true")
-        div.index-intro-plan
-            li Galaxy S7 Edge
-            li UNLIMITED 
-            li EVERTHING
-            li *Terms and Conditions apply
-            button 
-                a(href="#") Get Started
-                span(class="fa fa-arrow-right" aria-hidden="true")
-            div.intro-plan-img
-                img(src="/imgs/g7eC-crop.png")
-                
+  div.index-intro-display
+    div.index-intro-offer
+      li
+        span 2
+        span LINES
+        span for
+        span $40
+        span each
+      li UNLIMITED EVERYTHING
+      li *Terms and Conditions apply
+      button
+        a(href="#") Get This Deal
+        span(class="fa fa-arrow-right" aria-hidden="true")
+    div.index-intro-plan
+      li Galaxy S7 Edge
+      li UNLIMITED
+      li EVERTHING
+      li *Terms and Conditions apply
+      button
+        a(href="#") Get Started
+        span(class="fa fa-arrow-right" aria-hidden="true")
+      div.intro-plan-img
+        img(src="/imgs/g7eC-crop.png")
+
 section.index-phones-wrapper
-    div.index-phones-display
-        ul
-            li 
-                img(src="/imgs/apple5-crop.png")
-                a(href="#") Apple iPhone 6s
-                div.phones-rating
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star-half-o" aria-hidden="true")
-                    span (521)
-            li 
-                img(src="/imgs/apple6-crop.png")
-                a(href="#") Samsung Galaxy S7
-                div.phones-rating
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star-half-o" aria-hidden="true")
-                    span (245)
-            li 
-                img(src="/imgs/g7black-crop.png")
-                a(href="#") Samsung Galaxy S7 Edge
-                div.phones-rating
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star-half-o" aria-hidden="true")
-                    span (607)
-            li 
-                img(src="/imgs/g7silver-crop.png")
-                a(href="#") LG G5 Plus
-                div.phones-rating
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star" aria-hidden="true")
-                    i(class="fa fa-star-half-o" aria-hidden="true")
-                    span (302)
-                
+  div.index-phones-display
+    div.index-phones-list
+      div.index-phones-icon-left
+        i(class="fa fa-angle-left" aria-hidden="true")
+      div.index-phones-icon-right
+        i(class="fa fa-angle-right" aria-hidden="true")
+      ul
+        li
+          img(src="/imgs/apple5-crop.png")
+          a(href="#") Apple iPhone 6s
+          div.phones-rating
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star-half-o" aria-hidden="true")
+            span (521)
+          div.phones-pricing
+            p $0/24m Contract
+            p Total Price: $649
+
+        li
+          img(src="/imgs/apple6-crop.png")
+          a(href="#") Samsung Galaxy S7
+          div.phones-rating
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star-half-o" aria-hidden="true")
+            span (245)
+          div.phones-pricing
+            p $0/24m Contract
+            p Total Price: $499
+
+        li
+          img(src="/imgs/g7black-crop.png")
+          a(href="#") Samsung Galaxy S7 Edge
+          div.phones-rating
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star-half-o" aria-hidden="true")
+            span (607)
+          div.phones-pricing
+            p $0/24m Contract
+            p Total Price: $599
+
+        li
+          img(src="/imgs/g7silver-crop.png")
+          a(href="#") LG G5 Plus
+          a(href="#").phones-rating
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star-half-o" aria-hidden="true")
+            span (302)
+          div.phones-pricing
+            p $0/24m Contract
+            p Total Price: $399
+
+
 section.index-coverage-wrapper
-    .index-coverage-display
-        
+  div.index-coverage-overlay
+    div.index-coverage-display
+      div.coverage-info
+        h2 LOOPERS COVERAGE IS BETTER THAN EVER WITH NEW
+          span LTE-X
+        p We continue to improve our network in order to provide the best service possible.
+
+section.index-accessory-wrapper
+  div.index-accessory-display
+    div.accessory-one
+      h2 Hello
+    div.accessory-two
+      h2 Hello Again
+
 include ./partials/footer.pug

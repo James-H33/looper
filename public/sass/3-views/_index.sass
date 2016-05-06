@@ -3,278 +3,405 @@
 //*************************************************
 
 .index-intro-wrapper
-    width: 100%
-    height: 100%
-    background: #fff
+  width: 100%
+  height: 100%
 
 .index-intro-display
-    width: 100%
-    height: 100%
-    max-width: 1080px
-    margin: 0 auto
-    padding-top: 80px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+  width: 100%
+  height: 100%
+  max-width: 1080px
+  margin: 0 auto
+  padding-top: 80px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
-    li
-        list-style: none
+  li
+    list-style: none
 
 @media (min-width: 769px)
 
-    .index-intro-display
-        flex-direction: row
+  .index-intro-display
+    flex-direction: row
 
 .index-intro-offer
-    width: 300px
-    height: 300px
-    display: block
-    text-align: center
-    margin-top: 50px
+  width: 300px
+  height: 300px
+  display: block
+  text-align: center
+  margin-top: 50px
 
-    li:nth-of-type(1)
-        color: $flat-gray
+  li:nth-of-type(1)
+    color: $flat-gray
 
-        span:nth-child(1)
-            font-size: 50px
-            font-weight: bold
+    span:nth-child(1)
+      font-size: 50px
+      font-weight: bold
 
-        span:nth-child(2)
-            font-size: 30px
-            letter-spacing: 2px
+    span:nth-child(2)
+      font-size: 30px
+      letter-spacing: 2px
 
-        span:nth-child(3)
-            font-size: 20px
-            font-style: italic
+    span:nth-child(3)
+      font-size: 20px
+      font-style: italic
 
-        span:nth-child(4)
-            font-size: 50px
-            font-weight: bold
+    span:nth-child(4)
+      font-size: 50px
+      font-weight: bold
 
-        span:nth-child(5)
-            font-size: 20px
+    span:nth-child(5)
+      font-size: 20px
 
-    li:nth-of-type(2)
-        color: $red
-        font-size: 30px
+  li:nth-of-type(2)
+    color: $red
+    font-size: 30px
 
-    li:nth-of-type(3)
-        color: $light-gray
-        font-size: 10px
-    
-    button
-        width: 150px
-        height: 40px
-        font-size: 16px
-        overflow: hidden
-        color: $off-white
-        background: $flat-gray
-        margin: 20px 0
-        letter-spacing: 0.6px
-        outline: none
-        border: none
-        border-radius: 4px
-        transition: all 0.5s ease
-        
-        a
-            color: $off-white
-            margin-left: 10px
-            text-decoration: none
-            transition: all 0.5s ease
-            
-        .fa-arrow-right
-            transform: translateX(50px)
-            transition: all 0.5s ease
-        
-        &:hover
-            background: $red
-            
-            a
-                margin-left: -10px
-            
-            .fa-arrow-right
-                transform: translateX(10px)
-            
-           
+  li:nth-of-type(3)
+    color: $light-gray
+    font-size: 10px
+
+button
+  width: 150px
+  height: 40px
+  font-size: 16px
+  overflow: hidden
+  color: $off-white
+  background: $flat-gray
+  margin: 20px 0
+  letter-spacing: 0.6px
+  outline: none
+  border: none
+  border-radius: 4px
+  transition: all 0.5s ease
+
+  a
+    color: $off-white
+    margin-left: 10px
+    text-decoration: none
+    transition: all 0.5s ease
+
+  .fa-arrow-right
+    transform: translateX(50px)
+    transition: all 0.5s ease
+
+  &:hover
+    background: $red
+
+    a
+      margin-left: -10px
+
+    .fa-arrow-right
+      transform: translateX(10px)
+
+
 
 @media (min-width: 769px)
-    
-    .index-intro-offer
-        width: 400px
-        height: 400px
-        display: inline-block
+
+  .index-intro-offer
+    width: 400px
+    height: 400px
+    display: inline-block
 
 
 .index-intro-plan
-    width: 300px
-    height: 400px
-    position: relative
-    overflow: hidden
-    backgroud: #fff
+  width: 300px
+  height: 400px
+  position: relative
+  overflow: hidden
 
-    li
-        font-size: 25px
-        letter-spacing: 1px
-        position: absolute
-        z-index: 1
-        
-        &:nth-of-type(1)
-            top: 25px
-            color: $flat-gray
-            font-weight: bold
-           
-        &:nth-of-type(2)
-            color: $red
-            top: 70px
-            font-size: 30px
-            
-        &:nth-of-type(3)
-            color: $red
-            top: 100px
-            font-size: 30px
-       
-        &:nth-of-type(4)
-            color: $light-gray
-            top: 138px
-            font-size: 10px
-            
-    button 
-        width: 150px
-        height: 40px
-        font-size: 16px
-        background: $flat-gray
-        margin: 20px 0
-        overflow: hidden
-        position: absolute
-        top: 160px
-        letter-spacing: 0.6px
-        outline: none
-        border: none
-        border-radius: 4px
-        transition: all 0.5s ease
-        z-index: 1
-               
-        a
-            color: $off-white
-            text-decoration: none
-            margin-left: 10px 
-            transition: all 0.5s ease
-        
-        .fa-arrow-right
-            color: $off-white
-            transform: translateX(50px)
-            transition: all 0.5s ease
-        
-            
-        &:hover
-            background: $red
-            
-            .fa-arrow-right
-                transform: translateX(10px)
-            
-            a
-                margin-left: -10px
-                
-                
-    
+  li
+    font-size: 25px
+    letter-spacing: 1px
+    position: absolute
+    z-index: 1
+
+    &:nth-of-type(1)
+      top: 25px
+      color: $flat-gray
+      font-weight: bold
+
+    &:nth-of-type(2)
+      color: $red
+      top: 70px
+      font-size: 30px
+
+    &:nth-of-type(3)
+      color: $red
+      top: 100px
+      font-size: 30px
+
+    &:nth-of-type(4)
+      color: $light-gray
+      top: 138px
+      font-size: 10px
+
+  button
+    width: 150px
+    height: 40px
+    font-size: 16px
+    background: $flat-gray
+    margin: 20px 0
+    overflow: hidden
+    position: absolute
+    top: 160px
+    letter-spacing: 0.6px
+    outline: none
+    border: none
+    border-radius: 4px
+    transition: all 0.5s ease
+    z-index: 1
+
+    a
+      color: $off-white
+      text-decoration: none
+      margin-left: 10px
+      transition: all 0.5s ease
+
+    .fa-arrow-right
+      color: $off-white
+      transform: translateX(50px)
+      transition: all 0.5s ease
+
+
+    &:hover
+      background: $red
+
+      .fa-arrow-right
+        transform: translateX(10px)
+
+      a
+        margin-left: -10px
+
+
+
 
 @media (min-width: 769px)
-    
-    .index-intro-plan
-        width: 400px
-    
+
+  .index-intro-plan
+    width: 400px
+
 
 .intro-plan-img
-    width: 120px
-    height: 80%
-    position: absolute
-    right: 0
-    opacity: 0
-    transform: translateY(50px)
-    transition: all 1.5s ease
-    z-index: 0
-    
-    &.active-plan-img
-        opacity: 1
-        transform: translateY(0) 
-    
-    img
-        width: 100%
-        height: 100%
+  width: 120px
+  height: 80%
+  position: absolute
+  right: 0
+  opacity: 0
+  transform: translateY(50px)
+  transition: all 1.5s ease
+  z-index: 0
+
+  &.active-plan-img
+    opacity: 1
+    transform: translateY(0)
+
+  img
+    width: 100%
+    height: 100%
 
 @media (min-width: 769px)
-    
-    .intro-plan-img 
-        width: 200px
-        height: 400px
+
+  .intro-plan-img
+    width: 200px
+    height: 400px
 
 
 .index-phones-wrapper
-    width: 100%
-    height: 100%
-    padding: 80px 0
-    background: $back-white
+  width: 100%
+  height: 100%
+  padding: 80px 0
+  background: $back-white
 
 .index-phones-display
-    width: 100%
-    height: 100%
-    max-width: 1080px
-    margin: 0 auto
-    display: flex
-    justify-content: center
-    align-items: center
-    
-    ul
-        list-style: none
-        text-align: center
-    
-    li
-        width: 300px
-        height: 100%
-        text-align: center
-        margin: 20px auto
-        display: inline-block
-        
-        a
-            color: $flat-gray
-            text-decoration: none
-            display: block
-        
+  width: 100%
+  height: 100%
+  max-width: 1080px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+.index-phones-icon-left
+  width: 40px
+  height: 40px
+  position: absolute
+  top: 40%
+  left: 0
+  font-size: 30px
+  cursor: pointer
+  z-index: 80
+
+
+.index-phones-icon-right
+  width: 40px
+  height: 40px
+  position: absolute
+  top: 40%
+  right: 0
+  font-size: 30px
+  cursor: pointer
+  z-index: 80
+
+  i
+    position: absolute
+    right: 0
+
 @media (min-width: 560px)
 
-    .index-phones-display  li
-        width: 50%
+  .index-phones-icon-right
+    display: none
+
+  .index-phones-icon-left
+    display: none
+
+.index-phones-list
+  width: 300px
+  height: 100%
+  overflow-x: hidden
+  position: relative
+
+  ul
+    width: 1200px
+    height: 100%
+    list-style: none
+    text-align: center
+    overflow-x: hidden
+    position: relative
+    transition: all 0.6s ease
+    transform: translateX(0)
+
+  li
+    width: 300px
+    height: 100%
+    text-align: center
+    margin: 20px auto
+    display: inline-block
+
+    a
+      color: $flat-gray
+      font-size: 18px
+      text-decoration: none
+      display: block
+
+      &:hover
+        font-weight: bold
+
+@media (min-width: 560px)
+
+  .index-phones-list
+    width: 100%
+
+    ul
+      width: 100%
+
+    li
+      width: 50%
 
 
 @media (min-width: 769px)
-    
-    .index-phones-display  li    
-        width: 33.33%
-    
-    .index-phones-display li:nth-of-type(3)
+
+  .index-phones-list
+    width: 100%
+
+    ul
+      width: 100%
+
+    li
+      width: 33.33%
+
+      &:nth-of-type(3)
         display: none
-        
+
+
 
 .phones-rating
-    width: 100%
-    height: 100%
-    
-    i
-        margin: 2px
-        
-        
-        
+  width: 100%
+  height: 100%
+
+  i
+    color: $red
+    margin: 2px
+
+  span
+    color: $flat-gray
+    font-weight: bold
+
+
+.phones-pricing
+  width: 100%
+  height: 100%
+
+  p
+    color: $flat-gray
+    font-size: 14px
+
+    &:nth-of-type(2)
+      font-weight: bold
+
+
 .index-coverage-wrapper
-    width: 100%
-    height: 100%
-    
+  width: 100%
+  height: 600px
+  background:
+    image: url('https://images.unsplash.com/photo-1432741826919-baadebff52aa?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925')
+    size: cover
+    position: top
+    repeat: no-repeat
+
+.index-coverage-overlay
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.6)
+
 .index-coverage-display
-    width: 100%
+  width: 100%
+  height: 100%
+
+.coverage-info
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  h2
+    width: 310px
+    color: $off-white
+    font-size: 35px
+    margin: 30px 0
+
+  p
+    width: 310px
+    color: $off-white
+    font-size: 20px
+    font-style: italic
+    letter-spacing: 1px
+
+  span
+    color: $red
+    text-decoration: underline
+
+@media (min-width: 769px)
+
+  .coverage-info
+    width: 60%
     height: 100%
-    
 
-        
-        
-    
+.index-accessory-wrapper
+  width: 100%
+  height: 100%
 
+.index-accessory-display
+  width: 100%
+  height: 100%
+
+.accessory-one
+  width: 100%
+  height: 100%
+
+.accessory-two
+  width: 100%
+  height: 100%
