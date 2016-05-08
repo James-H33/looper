@@ -329,14 +329,16 @@ button {
 .index-phones-wrapper {
   width: 100%;
   height: 100%;
-  padding: 80px 0;
-  background: #f7f9fa; }
+  background: #f7f9fa;
+  position: relative; }
 
 .index-phones-display {
   width: 100%;
   height: 100%;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 80px 0;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -349,6 +351,18 @@ button {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.index-phones-more {
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+  .index-phones-more a {
+    color: #b92b27;
+    text-decoration: none; }
+    .index-phones-more a i {
+      margin: 5px 5px; }
+    .index-phones-more a:hover {
+      text-decoration: underline; }
 
 .index-phones-icon-left {
   width: 40px;
@@ -502,16 +516,95 @@ button {
     height: 100%; } }
 .index-accessory-wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #f7f9fa;
+  padding: 50px 0; }
 
 .index-accessory-display {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  max-width: 1080px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .accessory-one {
-  width: 100%;
-  height: 100%; }
+  width: 75%;
+  height: 100%;
+  background: #f7f9fa;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.accessory-one-banner {
+  width: 200px;
+  display: inline-block; }
+  .accessory-one-banner img {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0; }
+  .accessory-one-banner h2 {
+    font-size: 16px;
+    margin: 10px 0; }
+
+.accessory-one-phone {
+  width: 400px;
+  display: inline-block;
+  margin: 0 10px; }
+  .accessory-one-phone h2 {
+    font-size: 20px;
+    font-weight: light;
+    font-style: italic;
+    margin-top: 15px; }
 
 .accessory-two {
-  width: 100%;
-  height: 100%; }
+  width: 25%;
+  height: 100%;
+  background: #f7f9fa;
+  margin: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .accessory-two h2 {
+    font-size: 16px;
+    margin: 10px 0; }
+  .accessory-two li {
+    width: 100%;
+    height: auto;
+    list-style: none; }
+    .accessory-two li img {
+      width: 100%;
+      height: 100%; }
