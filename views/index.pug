@@ -36,62 +36,21 @@ section.index-phones-wrapper
       div.index-phones-icon-right
         i(class="fa fa-angle-right" aria-hidden="true")
       ul
-        li
-          img(src="/imgs/apple5-crop.png")
-          a(href="#") Apple iPhone 6s
-          div.phones-rating
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star-half-o" aria-hidden="true")
-            span (521)
-          div.phones-pricing
-            p $0/24m Contract
-            p Total Price: $649
-
-        li
-          img(src="/imgs/apple6-crop.png")
-          a(href="#") Samsung Galaxy S7
-          div.phones-rating
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star-half-o" aria-hidden="true")
-            span (245)
-          div.phones-pricing
-            p $0/24m Contract
-            p Total Price: $499
-
-        li
-          img(src="/imgs/g7black-crop.png")
-          a(href="#") Samsung Galaxy S7 Edge
-          div.phones-rating
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star-half-o" aria-hidden="true")
-            span (607)
-          div.phones-pricing
-            p $0/24m Contract
-            p Total Price: $599
-
-        li
-          img(src="/imgs/g7silver-crop.png")
-          a(href="#") LG G5 Plus
-          a(href="#").phones-rating
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star" aria-hidden="true")
-            i(class="fa fa-star-half-o" aria-hidden="true")
-            span (302)
-          div.phones-pricing
-            p $0/24m Contract
-            p Total Price: $399
-
+        - phone.forEach(function(item) {
+          li
+            img(src="/imgs/apple6s-crop.png")
+            a(href="#")= item.name
+            div.phones-rating
+              i(class="fa fa-star" aria-hidden="true")
+              i(class="fa fa-star" aria-hidden="true")
+              i(class="fa fa-star" aria-hidden="true")
+              i(class="fa fa-star" aria-hidden="true")
+              i(class="fa fa-star-half-o" aria-hidden="true")
+              span= '(' + item.ratings+ ')'
+            div.phones-pricing
+              p $0/24m Contract
+              p Total Price: $649
+        - })
 
 section.index-coverage-wrapper
   div.index-coverage-overlay
