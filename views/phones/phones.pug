@@ -13,6 +13,10 @@ section.phones-intro-wrapper
 
 section.phones-list-wrapper
   div.phones-list-display
+    div.phones-search-bar
+      form(action="/phones", method="GET")
+        input(class="phones-search-input", type="text", name="name", placeholder="Search")
+        button(class="fa fa-search", aria-hidden="true")
     ul
       - phone.forEach(function(item) {
         li
