@@ -28,7 +28,7 @@ section.index-intro-wrapper
 section.index-phones-wrapper
   div.index-phones-display
     div.index-phones-more
-      a(href="#") Show Now
+      a(href="/phones") Show Now
         i(class="fa fa-long-arrow-right" aria-hidden="true")
     div.index-phones-list
       div.index-phones-icon-left
@@ -36,21 +36,21 @@ section.index-phones-wrapper
       div.index-phones-icon-right
         i(class="fa fa-angle-right" aria-hidden="true")
       ul
-        - phone.forEach(function(item) {
+        - for (var i = 0; i < 4; i++) {
           li
-            img(src="/imgs/apple6s-crop.png")
-            a(href="#")= item.name
+            img(src="" + phone[i].images[0] + "")
+            a(href="/phones/" + phone[i]._id + "")= phone[i].name
             div.phones-rating
               i(class="fa fa-star" aria-hidden="true")
               i(class="fa fa-star" aria-hidden="true")
               i(class="fa fa-star" aria-hidden="true")
               i(class="fa fa-star" aria-hidden="true")
               i(class="fa fa-star-half-o" aria-hidden="true")
-              span= '(' + item.ratings+ ')'
+              span= '(' + phone[i].ratings+ ')'
             div.phones-pricing
-              p $0/24m Contract
-              p Total Price: $649
-        - })
+              p= phone[i].contract_price
+              p= 'Total Price:  ' + phone[i].total_price
+        - }
 
 section.index-coverage-wrapper
   div.index-coverage-overlay

@@ -1,0 +1,34 @@
+include ../partials/header.pug
+
+section.phones-intro-wrapper
+  div.phones-intro-overlay
+    div.phones-intro-display
+      div.phones-intro-switch
+        figure
+          h2 READY TO
+            span  SWITCH?
+          p One call gets you in the fast lane.
+          p Better plans. Better service.
+          button Get Started
+
+section.phones-list-wrapper
+  div.phones-list-display
+    ul
+      - phone.forEach(function(item) {
+        li
+          img(src="" + item.images[0] + "")
+          a(href="/phones/" + item._id + "")= item.name
+          div.phones-rating
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star" aria-hidden="true")
+            i(class="fa fa-star-half-o" aria-hidden="true")
+            span= '(' + item.ratings+ ')'
+          div.phones-pricing
+            p= item.contract_price
+            p= 'Total Price:  ' + item.total_price
+      - })
+
+
+include ../partials/footer.pug

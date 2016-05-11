@@ -6,19 +6,47 @@ $('.nav-icon').on('click', function(){
    navActive();
 })
 
-$('.index-phones-icon-left').on('click', function() {
-    phoneListSlideLeft();
-})
 
-$('.index-phones-icon-right').on('click', function() {
-  phoneListSlideRight();
-})
 
-$(window).on('load', function(){
-    setTimeout(function(){
-        $('.intro-plan-img').addClass('active-plan-img');
-    }, 300)
-})
+//*************************************************
+//              Activate By Location
+//*************************************************
+
+var loc = (window.location.pathname).substr(0, 10);
+
+// Index Page Functions
+if (loc == '/home') {
+
+  $('.index-phones-icon-left').on('click', function() {
+      phoneListSlideLeft();
+  })
+
+  $('.index-phones-icon-right').on('click', function() {
+    phoneListSlideRight();
+  })
+
+  // On page load delay animation
+  $(window).on('load', function(){
+      setTimeout(function() {
+          $('.intro-plan-img').addClass('active-plan-img');
+      }, 300)
+  })
+
+}
+
+// Phones Page Functions
+if (loc == '/phones') {
+
+  // On page load delay animation
+  $(window).on('load', function() {
+      setTimeout(function() {
+        $('.phones-intro-switch figure').addClass('active-phone-switch');
+      }, 300)
+    })
+
+}
+
+
 
 
 //*************************************************
