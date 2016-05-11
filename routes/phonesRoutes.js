@@ -9,7 +9,17 @@ router.get('/phones', function(req, res) {
     if (err) {
       console.log(err);
     } else {
-      res.render('phones', {phone: phones});
+      res.render('phones/phones', {phone: phones});
+    }
+  })
+})
+
+router.get('/phones/:id', function(req, res) {
+  Phones.findById(req.params.id, function(err, phones) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.render('phones/phone-details', {phone: phones});
     }
   })
 })
