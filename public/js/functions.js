@@ -43,10 +43,7 @@ if (loc == '/phones') {
         $('.phones-intro-switch figure').addClass('active-phone-switch');
       }, 300)
     })
-
 }
-
-
 
 
 //*************************************************
@@ -88,5 +85,5 @@ function phoneListSlideRight() {
         'transform' : 'translateX(' + x + 'px)'
       })
     }
-  console.log(x)
+  console.log(x);
 }
