@@ -1054,3 +1054,178 @@ button {
       font-size: 18px; }
     .plans-plans-options button span {
       font-size: 14px; }
+
+.why-intro-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #f7f9fa;
+  padding-top: 50px; }
+
+.why-intro-display {
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.why-intro-banner {
+  width: 100%;
+  height: 100%; }
+  .why-intro-banner img {
+    width: 100%;
+    height: 100%; }
+    .why-intro-banner img:nth-of-type(1) {
+      display: none; }
+    .why-intro-banner img:nth-of-type(2) {
+      display: intial; }
+
+@media (min-width: 700px) {
+  .why-intro-banner img {
+    width: 100%;
+    height: 100%; }
+    .why-intro-banner img:nth-of-type(1) {
+      display: initial; }
+    .why-intro-banner img:nth-of-type(2) {
+      display: none; } }
+.why-freedom-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.why-freedom-display {
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+@media (min-width: 769px) {
+  .why-freedom-display {
+    padding: 80px 0; } }
+.why-freedom-switch {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.5); }
+  .why-freedom-switch div {
+    width: 96%;
+    display: inline-block;
+    margin: 10px; }
+  .why-freedom-switch h5 {
+    color: #36424a;
+    font-size: 20px; }
+  .why-freedom-switch p {
+    color: rgba(30, 30, 30, 0.5);
+    font-size: 16px;
+    margin: 20px 0; }
+  .why-freedom-switch figure {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top; }
+    .why-freedom-switch figure img {
+      width: 100%;
+      height: 100%; }
+
+@media (min-width: 769px) {
+  .why-freedom-switch {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .why-freedom-switch div {
+      width: 68%;
+      margin: 0 5px; }
+    .why-freedom-switch figure {
+      width: 30%; } }
+.why-freedom-buyout {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .why-freedom-buyout div {
+    width: 96%;
+    margin: 0 5px; }
+  .why-freedom-buyout h5 {
+    color: #36424a;
+    font-size: 20px; }
+  .why-freedom-buyout p {
+    color: rgba(30, 30, 30, 0.5);
+    font-size: 16px;
+    margin: 20px 0; }
+  .why-freedom-buyout a {
+    color: #b92b27;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .why-freedom-buyout a:hover {
+      text-decoration: underline; }
+  .why-freedom-buyout figure {
+    width: 65%;
+    min-width: 300px; }
+    .why-freedom-buyout figure img {
+      width: 100%;
+      height: 100%; }
+
+@media (min-width: 769px) {
+  .why-freedom-buyout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .why-freedom-buyout div {
+      width: 68%;
+      margin: 0 5px; }
+    .why-freedom-buyout figure {
+      width: 30%; } }
+.details-wrapper {
+  width: 100%;
+  height: 500px; }
+
+.details-display {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.details-phone-img {
+  width: 50%;
+  height: 100%;
+  background: #f5f5f5; }
+
+.details-phone-info {
+  width: 50%;
+  height: 100%;
+  background: #f7f9fa; }
