@@ -1,7 +1,7 @@
 // Looper is brand new name to the Wireless telephone game
 
 Requires npm and node to run
--- Also recommend 
+-- Also recommend
     -- Pug(previously jade)
     -- Sass which requires ruby
 
@@ -10,3 +10,6 @@ Requires npm and node to run
 
 // Run Program
 -- gulp
+
+-- ISSUES
+- Refactor Plans Page Javascript

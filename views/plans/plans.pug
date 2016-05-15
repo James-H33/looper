@@ -3,12 +3,46 @@ section.plans-intro-wrapper
   div.plans-intro-display
     h2 Simple Choice Plans
     div.plans-choice-block
-      button Plans for Phones
-      button Plans for Tablets
+      button
+        i(class="fa fa-mobile" aria-hidden="true")
+        span Plans for Phones
+      button
+        i(class="fa fa-tablet" aria-hidden="true")
+        span Plans for Phones
     div.plans-image-block
       li
         h2 Customize
         p Plans for your budget start here.
       li
         img(src="/imgs/plans-guy.png")
+section.plans-plans-wrapper
+  div.plans-plans-display
+    div.plans-plans-total
+      h3 PLAN TOTAL
+      ul
+        li $
+        li: span.plans-span-text 50
+        li /mo.
+      p Plus taxes, fees and monthly device payment.
+      h5 Includes unlimited calls and text in the U.S., Mexico, and Canada
+    div.plans-plans-options
+      ul
+        li: button.button-one.active-plans-button
+          span 2GB
+          span INCL
+        li: button.button-two
+          span 6GB
+          span + $15
+        li: button.button-three
+          span 10GB
+          span + $30
+        li: button.button-four
+          span UNL
+          span + $45
+      button
+        h2 START SHOPPING
+        span WITH THIS PLAN
+
+
+
 include ../partials/footer.pug
