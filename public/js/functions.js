@@ -45,6 +45,23 @@ if (loc == '/phones') {
     })
 }
 
+$('.plans-plans-options button').on('click', function() {
+  $('.plans-plans-options button').removeClass('active-plans-button');
+  $(this).addClass('active-plans-button');
+
+
+  // console.log(this.className);
+  if (this.className == 'button-one active-plans-button') {
+    $('.plans-span-text').text('50');
+  } else if (this.className == 'button-two active-plans-button') {
+    $('.plans-span-text').text('65');
+  } else if (this.className == 'button-three active-plans-button') {
+    $('.plans-span-text').text('80');
+  } else if (this.className == 'button-four active-plans-button') {
+    $('.plans-span-text').text('95');
+  }
+});
+
 
 //*************************************************
 //             Functions
