@@ -574,14 +574,17 @@ button {
     width: 310px;
     color: #f5f5f5;
     font-size: 35px;
-    margin: 30px 0; }
+    margin: 30px 0;
+    display: block; }
   .coverage-info p {
     width: 310px;
     color: #f5f5f5;
     font-size: 20px;
     font-style: italic;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    display: block; }
   .coverage-info span {
+    display: block;
     color: #b92b27;
     text-decoration: underline; }
 
@@ -667,7 +670,8 @@ button {
     flex-direction: row; } }
 .accessory-one-banner {
   width: 90%;
-  max-width: 400px; }
+  max-width: 400px;
+  display: block; }
   .accessory-one-banner img {
     width: 70%;
     margin: 10px 0; }
