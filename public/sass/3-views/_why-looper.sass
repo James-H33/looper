@@ -1,0 +1,153 @@
+//*************************************************
+//             Why Looper Styles
+//*************************************************
+
+.why-intro-wrapper
+  width: 100%
+  height: 100%
+  background: $back-white
+  padding-top: 50px
+
+.why-intro-display
+  width: 100%
+  height: 100%
+  max-width: 1080px
+  margin: 0 auto
+
+.why-intro-banner
+  width: 100%
+  height: 100%
+
+  img
+    width: 100%
+    height: 100%
+
+    &:nth-of-type(1)
+      display: none
+
+    &:nth-of-type(2)
+      display: intial
+
+@media (min-width: 700px)
+
+  .why-intro-banner
+
+    img
+      width: 100%
+      height: 100%
+
+      &:nth-of-type(1)
+        display: initial
+
+      &:nth-of-type(2)
+        display: none
+
+.why-freedom-wrapper
+  width: 100%
+  height: 100%
+
+.why-freedom-display
+  width: 100%
+  height: 100%
+  max-width: 1080px
+  margin: 0 auto
+  padding: 20px 0
+
+@media (min-width: 769px)
+
+  .why-freedom-display
+    padding: 80px 0
+
+.why-freedom-switch
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  border-bottom: 1px solid $light-gray
+
+  div
+    width: 96%
+    display: inline-block
+    margin: 10px
+
+  h5
+    color: $flat-gray
+    font-size: 20px
+
+  p
+    color: $light-gray
+    font-size: 16px
+    margin: 20px 0
+
+  figure
+    width: 300px
+    display: inline-block
+    vertical-align: top
+
+    img
+      width: 100%
+      height: 100%
+
+@media (min-width: 769px)
+
+  .why-freedom-switch
+    flex-direction: row-reverse
+
+    div
+      width: 68%
+      margin: 0 5px
+
+    figure
+      width: 30%
+
+.why-freedom-buyout
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  padding: 50px 0
+  display: flex
+  flex-direction: column-reverse
+  align-items: center
+
+  div
+    width: 96%
+    margin: 0 5px
+
+  h5
+    color: $flat-gray
+    font-size: 20px
+
+  p
+    color: $light-gray
+    font-size: 16px
+    margin: 20px 0
+
+  a
+    color: $red
+    text-decoration: none
+    font-weight: bold
+    transition: all 0.5s ease
+
+    &:hover
+      text-decoration: underline
+
+  figure
+    width: 65%
+    min-width: 300px
+
+    img
+      width: 100%
+      height: 100%
+
+@media (min-width: 769px)
+
+  .why-freedom-buyout
+    flex-direction: row-reverse
+
+    div
+      width: 68%
+      margin: 0 5px
+
+    figure
+      width: 30%

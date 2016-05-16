@@ -1,5 +1,10 @@
 include ../partials/header.pug
 
-h1= phone.name
+section.details-wrapper
+    div.details-display
+      div.details-phone-img
+        img(src="" + phone.images[0] + "")
+      div.details-phone-info
+
 
 include ../partials/footer.pug

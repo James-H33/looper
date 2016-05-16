@@ -15,6 +15,7 @@ var Phones = require('./models/phonesModels');
 var indexRoutes  = require('./routes/indexRoutes');
 var phonesRoutes = require('./routes/phonesRoutes');
 var plansRoutes  = require('./routes/plansRoutes');
+var whyRoutes = require('./routes/whyRoutes');
 
 mongoose.connect('mongodb://localhost/looper_wireless');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,6 +33,7 @@ app.get('/', function(req, res) {
 app.use('/', indexRoutes);
 app.use('/', phonesRoutes);
 app.use('/', plansRoutes);
+app.use('/', whyRoutes);
 
 app.listen(port, portIP, function() {
   console.log('Listening on server..');
