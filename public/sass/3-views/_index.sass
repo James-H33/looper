@@ -435,16 +435,6 @@ button
   height: 100%
   max-width: 1080px
   margin: 0 auto
-  // display: flex
-  // flex-direction: column
-  // justify-content: center
-  // align-items: center
-
-@media (min-width: 769px)
-
-  .index-accessory-display
-    flex-direction: row
-
 
 .accessory-one
   width: 100%
@@ -458,13 +448,14 @@ button
   .accessory-one
     width: 50%
     margin: 0 10px
-    padding: 0
+    padding: 20px 0
+    display: inline-block
 
 @media (min-width: 900px)
 
   .accessory-one
-    width: 50%
-    flex-direction: row
+    width: 60%
+
 
 
 
@@ -519,6 +510,7 @@ button
   height: 100%
   background: $back-white
   text-align: center
+  padding: 20px 0
 
   h2
     color: $flat-gray
@@ -527,7 +519,9 @@ button
 
   li
     width: 100%
+    max-width: 320px
     height: auto
+    margin: 20px auto
     list-style: none
     text-align: center
 
@@ -549,13 +543,17 @@ button
 @media (min-width: 769px)
 
   .accessory-two
-    width: 50%
+    width: 42%
     margin: 0 10px
+    display: inline-block
+    vertical-align: top
+
 
 @media (min-width: 900px)
 
   .accessory-two
-    width: 50%
+    width: 35%
+    height: 505px
 
     h2
       font-size: 20px
