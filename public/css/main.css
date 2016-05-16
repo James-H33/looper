@@ -536,7 +536,7 @@ button {
 .index-coverage-wrapper {
   width: 100%;
   height: 600px;
-  background-image: url("https://images.unsplash.com/photo-1432741826919-baadebff52aa?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-image: url("/imgs/index-coverage-back.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat; }
@@ -669,10 +669,10 @@ button {
     flex-direction: row; } }
 .accessory-one-banner {
   width: 90%;
+  min-height: 400px;
   max-width: 400px; }
   .accessory-one-banner img {
     width: 70%;
-    height: 100%;
     margin: 10px 0; }
   .accessory-one-banner h2 {
     color: #36424a;
@@ -695,6 +695,7 @@ button {
 .accessory-two {
   width: 100%;
   height: 100%;
+  min-height: 500px;
   background: #f7f9fa;
   padding: 40px 0;
   display: -webkit-box;
@@ -727,7 +728,6 @@ button {
     .accessory-two li img {
       width: 90%;
       max-width: 400px;
-      height: 100%;
       margin: 10px 0; }
     .accessory-two li a {
       color: #36424a;
@@ -741,11 +741,13 @@ button {
 @media (min-width: 769px) {
   .accessory-two {
     width: 50%;
+    min-height: 450px;
     margin: 0 10px;
     padding: 10px; } }
 @media (min-width: 900px) {
   .accessory-two {
-    width: 30%; }
+    width: 30%;
+    min-height: 350px; }
     .accessory-two h2 {
       font-size: 20px; }
     .accessory-two img {
@@ -763,7 +765,7 @@ button {
 .phones-intro-wrapper {
   width: 100%;
   height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1421757350652-9f65a35effc7?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-image: url("/imgs/phones-page-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
