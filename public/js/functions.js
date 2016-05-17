@@ -11,15 +11,15 @@ $('.nav-icon').on('click', function(){
 //              Activate By Location
 //*************************************************
 
-var loc = (window.location.pathname).substr(0, 10);
+var loc = (window.location.pathname);
 
 // Index Page Functions
-if (loc == '/home') {
+if (loc.substr(0, 5) == '/home') {
 
   $('.index-phones-icon-left').on('click', function() {
       phoneListSlideLeft();
   })
-
+//
   $('.index-phones-icon-right').on('click', function() {
     phoneListSlideRight();
   })
@@ -34,7 +34,7 @@ if (loc == '/home') {
 }
 
 // Phones Page Functions
-if (loc == '/phones') {
+if (loc.substr(0, 7) == '/phones') {
 
   // On page load delay animation
   $(window).on('load', function() {
@@ -45,10 +45,21 @@ if (loc == '/phones') {
 }
 
 // Plans Page Functions
-if (loc == '/plans') {
+if (loc.substr(0, 6) == '/plans') {
   $('.plans-plans-options button').on('click', function() {
     var planButton = this;
     priceChange(planButton);
+  });
+}
+
+// Phone Details Page Functions
+if (loc.substr(0, 8) === '/phones/') {
+  $('.details-right-icon').on('click', function() {
+    detailsLeftPhoneChange();
+  });
+
+  $('.details-left-icon').on('click', function() {
+    detailsRightPhoneChange();
   });
 }
 
@@ -109,4 +120,24 @@ function priceChange(prop) {
   } else if (prop.className == 'button-four active-plans-button') {
     $('.plans-span-text').text('95');
   }
+}
+
+// Changes Phone Details Images || Phone Details
+function detailsLeftPhoneChange() {
+  $('.details-phone-img li:nth-of-type(2)').css({
+      'opacity' : '1'
+    });
+    $('.details-phone-img li:nth-of-type(1)').css({
+      'opacity' : '0'
+    });
+}
+
+// Changes Phone Details Images || Phone Details
+function detailsRightPhoneChange() {
+   $('.details-phone-img li:nth-of-type(1)').css({
+      'opacity' : '1'
+    });
+    $('.details-phone-img li:nth-of-type(2)').css({
+      'opacity' : '0'
+    });
 }
