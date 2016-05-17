@@ -30,7 +30,7 @@ gulp.task('browserSync', ['nodemon'], function() {
 
   gulp.watch('./**/*.sass', ['sass']);
   // watch js needs to be altered to ignore node_modules as CPU usage is too high
-  // gulp.watch('./**/*.js').on('change', browserSync.reload);
+  gulp.watch('./public/js/*.js').on('change', browserSync.reload);
   gulp.watch('./**/*.pug').on('change', browserSync.reload);
 })
 
@@ -40,7 +40,7 @@ gulp.task('nodemon', function(cb) {
 	return nodemon({
 		script: 'app.js'
 	}).on('start', function () {
-    
+
 		if (!started) {
 			cb();
 			started = true;

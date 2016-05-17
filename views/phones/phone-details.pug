@@ -3,8 +3,49 @@ include ../partials/header.pug
 section.details-wrapper
     div.details-display
       div.details-phone-img
-        img(src="" + phone.images[0] + "")
+        div.details-left-icon
+          i(class="fa fa-angle-left" aria-hidden="true")
+        div.details-right-icon
+          i(class="fa fa-angle-right" aria-hidden="true")
+        ul
+          li
+            img(src="" + phone.images[0] + "")
+          li
+            img(src="" + phone.images[1] + "")
       div.details-phone-info
+        h2= phone.name
+        h3 Display
+        ul
+          - for (var i = 0; i < phone.specs.display.length; i++) {
+            li= phone.specs.display[i]
+          - }
+        h3 Size and Weight
+        ul
+          - for (var i = 0; i < phone.specs.size_weight.length; i++) {
+            li= phone.specs.size_weight[i]
+          - }
+        h3 Operating System
+        ul
+          - for (var i = 0; i < phone.specs.os.length; i++) {
+            li= phone.specs.os[i]
+          - }
+        h3 Battery Life
+        ul
+          - for (var i = 0; i < phone.specs.battery.length; i++) {
+            li= phone.specs.battery[i]
+          - }
+        h3 Camera
+        ul
+          - for (var i = 0; i < phone.specs.camera.length; i++) {
+            li= phone.specs.camera[i]
+          - }
+        h3 Memory
+        ul
+          - for (var i = 0; i < phone.specs.memory.length; i++) {
+            li= phone.specs.memory[i]
+          - }
+
+
 
 
 include ../partials/footer.pug
