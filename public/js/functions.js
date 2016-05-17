@@ -2,11 +2,10 @@
 //              JQuery
 //*************************************************
 
+// Navigation Event
 $('.nav-icon').on('click', function(){
    navActive();
 })
-
-
 
 //*************************************************
 //              Activate By Location
@@ -45,28 +44,21 @@ if (loc == '/phones') {
     })
 }
 
-$('.plans-plans-options button').on('click', function() {
-  $('.plans-plans-options button').removeClass('active-plans-button');
-  $(this).addClass('active-plans-button');
+// Plans Page Functions
+if (loc == '/plans') {
+  $('.plans-plans-options button').on('click', function() {
+    var planButton = this;
+    priceChange(planButton);
+  });
+}
 
-
-  // console.log(this.className);
-  if (this.className == 'button-one active-plans-button') {
-    $('.plans-span-text').text('50');
-  } else if (this.className == 'button-two active-plans-button') {
-    $('.plans-span-text').text('65');
-  } else if (this.className == 'button-three active-plans-button') {
-    $('.plans-span-text').text('80');
-  } else if (this.className == 'button-four active-plans-button') {
-    $('.plans-span-text').text('95');
-  }
-});
 
 
 //*************************************************
 //             Functions
 //*************************************************
 
+// Toggle Navigation Menu
 function navActive() {
     $('.nav-wrapper').toggleClass('active-nav');
     $('.nav-icon span').toggleClass('active-nav')
@@ -75,12 +67,11 @@ function navActive() {
     $('.nav-display').toggleClass('active-nav');
 }
 
+// Slider for Phones on mobile view || Index Page
 var x = 0;
-var dist_slide;
 function phoneListSlideLeft() {
 
   if(x === 0) {
-    console.log(x);
   } else {
     x = x + 300;
 
@@ -88,13 +79,12 @@ function phoneListSlideLeft() {
       'transform' : 'translateX('+ x +'px)'
     })
   }
-console.log(x);
 }
 
+// Slider for Phones on mobile view || Index Page
 function phoneListSlideRight() {
 
     if(x === -900) {
-      console.log(x)
     } else {
       x = x + (-300);
 
@@ -102,5 +92,21 @@ function phoneListSlideRight() {
         'transform' : 'translateX(' + x + 'px)'
       })
     }
-  console.log(x);
+}
+
+// Changes Price on plans page || Plans Page
+function priceChange(prop) {
+
+  $('.plans-plans-options button').removeClass('active-plans-button');
+  $(prop).addClass('active-plans-button');
+
+  if (prop.className == 'button-one active-plans-button') {
+    $('.plans-span-text').text('50');
+  } else if (prop.className == 'button-two active-plans-button') {
+    $('.plans-span-text').text('65');
+  } else if (prop.className == 'button-three active-plans-button') {
+    $('.plans-span-text').text('80');
+  } else if (prop.className == 'button-four active-plans-button') {
+    $('.plans-span-text').text('95');
+  }
 }
