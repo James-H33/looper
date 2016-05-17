@@ -1162,24 +1162,8 @@ button {
   height: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 50px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  padding: 50px 0; }
 
-@media (min-width: 769px) {
-  .details-display {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; } }
 .details-left-icon {
   width: 40px;
   height: 40px;
@@ -1204,7 +1188,6 @@ button {
 .details-phone-img {
   width: 315px;
   height: 100%;
-  overflow-x: hidden;
   margin: 0 auto;
   position: relative; }
   .details-phone-img ul {
@@ -1229,7 +1212,9 @@ button {
 
 @media (min-width: 769px) {
   .details-phone-img {
-    width: 50%; } }
+    width: 50%;
+    display: inline-block;
+    vertical-align: top; } }
 .details-phone-info {
   width: 310px;
   height: 100%;
@@ -1245,4 +1230,5 @@ button {
 
 @media (min-width: 769px) {
   .details-phone-info {
-    width: 50%; } }
+    width: 50%;
+    display: inline-block; } }
