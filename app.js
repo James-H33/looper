@@ -17,8 +17,8 @@ var phonesRoutes = require('./routes/phonesRoutes');
 var plansRoutes  = require('./routes/plansRoutes');
 var whyRoutes = require('./routes/whyRoutes');
 
-mongoose.connect('mongodb://localhost/looper_wireless');
-// mongoose.connect('mongodb://retsbud:String33@ds023432.mlab.com:23432/looper_wireless');
+// mongoose.connect('mongodb://localhost/looper_wireless');
+mongoose.connect('mongodb://retsbud:String33@ds023432.mlab.com:23432/looper_wireless');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug');
